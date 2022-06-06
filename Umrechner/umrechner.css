@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    color: darkblue;
+}
+
+.umrechner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eingabefeld {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    border: 2px solid black;
+    max-width: 25%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+}
+
+.umrechner input {
+    border: 25px;
+    border-bottom: 2px solid black;
+}
+
+.umrechner input:focus {
+    outline: none;
+}
+
+.umrechner input,
+.umrechner label {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.umrechner * {
+    font-family: 'Verdana';
+    font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .umrechner {
+        flex-direction: column;
+    }
+    .eingabefeld {
+        max-width: 98%;
+    }
+}

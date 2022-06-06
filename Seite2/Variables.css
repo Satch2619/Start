@@ -1,0 +1,8 @@
+body {
+    --my-background-color: aqua;
+    --my-text-color: #ffbd59;
+}
+
+.item {
+    color: var(--my-text-color);
+}

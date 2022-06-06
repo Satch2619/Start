@@ -1,0 +1,23 @@
+.wrapper {
+    height: 500px;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 5px;
+}
+
+.box {
+    background-color: aqua;
+}
+
+.b {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.a {
+    grid-column: 1 / span 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: greenyellow;
+}

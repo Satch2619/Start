@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "html-Lernen",
+			"path": "html-Lernen"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Umrechner"
+    }
+}
