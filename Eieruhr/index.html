@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eieruhr</title>
+    <title>Document</title>
     <style>
       .background-dark {
         background-color: black;
@@ -22,7 +22,7 @@
       .timer {
         font-size: 60px;
         color: white;
-        font-family: 'roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
     </style>
 
@@ -36,20 +36,20 @@
           let fiveMinutes = 1000 * 60 * 5;
           let endTime = startTime + fiveMinutes;
 
-          setIntervall(function () {
+          setInterval(function () {
             let timeLeft = endTime - new Date().getTime();
 
             if (timeLeft > 0) {
               let minutes = timeLeft / (1000 * 60);
               minutes = Math.floor(minutes);
-              let seconds = (timeleft / 1000) % 60;
+              let seconds = (timeLeft / 1000) % 60;
               seconds = Math.round(seconds);
               seconds = ('0' + seconds).slice(-2);
               let text = '0' + minutes + ' : ' + seconds;
               timer.innerHTML = text;
             } else {
               alarm.play();
-              innerHTML = '00:00';
+              innerHTML = '00 : 00';
             }
           }, 1000);
           timerStarted = true;
@@ -66,9 +66,9 @@
       <img src="bilder/egg.png" />
     </div>
 
-    <div class="center margin-top timer" id="timer">05:00</div>
+    <div class="center margin-top timer" id="timer">05 : 00</div>
 
-    <div class="center margin-top">
+    <div class="center margin-top timer">
       <img onclick="startTimer()" src="bilder/button.png" />
     </div>
   </body>
