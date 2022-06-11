@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Clicker Spiel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="clicker.js"></script>
+  </head>
+  <body>
+    <div class="spielfeld">
+      <div class="kartenrahmen">
+        <div class="karte">
+          <h2>Gieße die Pflanze!</h2>
+          <div class="bild-behaelter">
+            <img
+              id="kartenbild"
+              src="bilder/Pflanze1.png"
+              alt="Ein Bild einer Pflanze"
+            />
+          </div>
+          <div class="erfahrungsbehaelter">
+            <p id="bereits-gegossen" class="kartentext">0</p>
+            <p class="kartentext">von</p>
+            <p id="benoetigtes-giessen" class="kartentext">3</p>
+          </div>
+          <button id="giessen-button" onclick="giessen()">Gießen!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

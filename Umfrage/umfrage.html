@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umfrage</title>
+    <link rel="stylesheet" text="text/css" href="umfrage.css" />
+</head>
+
+<body>
+    <form action="" method="get" autocomplete="off">
+        <div class="form-box">
+            <label for="saltutation">Anrede</label>
+            <div class="select">
+                <select name="salutation" id="salutation">
+            <option value="">Bitte wählen</option>
+            <option value="male">Herr</option>
+            <option value="female">Frau</option>
+          </select>
+            </div>
+        </div>
+        <div class="form-box">
+            <label for="firsname">Vorname</label>
+            <input type="text" id="firstname" />
+        </div>
+        <div class="form-box">
+            <label for="lastname">Nachname</label>
+            <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div class="form-box">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+        </div>
+        <div class="form-box">
+            <label for="password">Passwort</label>
+            <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-box">
+            <label for="passwordRepeat">Passwort wiederholen</label>
+            <input type="password" id="passwordRepeat" name="passwordRepeat" />
+        </div>
+        <div class="form-box">
+            <input type="checkbox" id="agb" name="agb" />
+            <label for="agb">Hiermit bestätige ich die AGB's</label>
+        </div>
+        <div class="form-box">
+            <button type="submit">Los geht's</button>
+            <button type="reset">Abbrechen</button>
+        </div>
+    </form>
+</body>
+
+</html>

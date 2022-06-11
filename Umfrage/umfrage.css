@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+
+/* Formular*/
+
+.form-box {
+    padding: 15px 0;
+}
+
+.form-box>label:first-child {
+    display: block;
+}
+
+.form-box>input[type='text'],
+.form-box>input[type='email'],
+.form-box>input[type='password'] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1 px solid black;
+}
+
+.form-box>input[type='text']:hover,
+.form-box>input[type='email']:hover,
+.form-box>input[type='password']:hover {
+    background-color: rgb(244, 231, 215);
+}
+
+.form-box>input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    accent-color: black;
+}
+
+.form-box>label:last-child {
+    position: relative;
+    vertical-align: middle;
+    bottom: 10px;
+}
+
+.form-box>button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    border: 0;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.form-box>button[type='submit'] {
+    color: White;
+    background-color: black;
+}
+
+.form-box>button[type='submit']:hover {
+    color: black;
+    background-color: white;
+}
+
+.form-box>button[type='reset'] {
+    color: White;
+    background-color: black;
+}
+
+.form-box>button[type='reset']:hover {
+    color: black;
+    background-color: white;
+}
+
+.form-box select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-box .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.form-box .select::after {
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 11px 16px;
+    pointer-events: none;
+}
+
+.form-box .select:hover::after {
+    background-color: lightgrey;
+}
