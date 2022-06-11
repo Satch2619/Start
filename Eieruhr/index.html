@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eieruhr</title>
+    <style>
+      .background-dark {
+        background-color: black;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .margin-top {
+        margin-top: 100px;
+      }
+
+      .timer {
+        font-size: 60px;
+        color: white;
+        font-family: 'roboto', sans-serif;
+      }
+    </style>
+
+    <script>
+      function startTimer() {
+        let startTime = new Date().getTime();
+        let fiveMinutes = 1000 * 60 * 5;
+        let endTime = startTime + fiveMinutes;
+
+        setIntervall(function () {
+          let timeLeft = endTime - new Date().getTime();
+          let minutes = timeLeft / (1000 * 60);
+          minutes = Math.floor(minutes);
+          let seconds = (timeleft / 1000) % 60;
+          seconds = Math.round(seconds);
+          let text = '0' + minutes + ' : ' + seconds;
+          timer.innerHTML = text;
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body class="background-dark">
+    <div>
+      <img src="bilder/menu.png" />
+    </div>
+
+    <div class="center margin-top">
+      <img src="bilder/egg.png" />
+    </div>
+
+    <div class="center margin-top timer" id="timer">05:00</div>
+
+    <div class="center margin-top">
+      <img onclick="startTimer()" src="bilder/button.png" />
+    </div>
+  </body>
+</html>
