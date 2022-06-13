@@ -1,0 +1,35 @@
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.einfacher-button {
+  background-color: hsl(219, 90%, 44%);
+  color: white;
+  border: none;
+
+  /* Optional für angerundete Ecken */
+  border-radius: 5em;
+}
+
+.einfacher-button:hover {
+  background-color: hsl(219, 90%, 30%);
+}
+
+/* Code zur Positionierung der Buttuns für das tutorial*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.button-behaelter {
+  min-height: 100vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
