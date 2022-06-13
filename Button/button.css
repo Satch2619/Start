@@ -11,10 +11,58 @@
   border: none;
 
   /* Optional für angerundete Ecken */
-  border-radius: 5em;
+  border-radius: 0.5em;
 }
 
 .einfacher-button:hover {
+  background-color: hsl(219, 90%, 30%);
+}
+
+.umrandungs-button {
+  background-color: white;
+  color: hsl(219, 90%, 30%);
+  border: 2px solid hsl(219, 90%, 30%);
+  border-radius: 0.5em;
+}
+
+.pillen-button {
+  background-color: hsl(219, 90%, 44%);
+  color: white;
+  border-radius: 1.5em/50%;
+  border: none;
+}
+
+.pillen-button:hover {
+  background-color: hsl(219, 90%, 30%);
+}
+
+.umrandungs-button:hover {
+  background-color: hsl(219, 90%, 30%);
+  color: white;
+}
+
+.text-button {
+  color: hsl(219, 90%, 30%);
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-button:hover {
+  background-color: hsl(219, 95%, 97%);
+}
+
+.icon-button {
+  background-color: hsl(219, 90%, 44%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.5em;
+  line-height: 1;
+  width: 2em;
+}
+
+.icon-button:hover {
   background-color: hsl(219, 90%, 30%);
 }
 
