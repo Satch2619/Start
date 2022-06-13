@@ -1,139 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 26px;
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
 }
 
 body {
-    height: 100%;
-    background-color: rgb(242, 240, 238);
+  height: 100%;
+  background-color: rgb(242, 240, 238);
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 .start {
-    background-image: url(Koh\ Phi\ Phi\ Boot-min_Th_Icon.jpg);
-    min-height: 55vh;
-    min-width: 80vh;
-    background-size: cover;
-    background-position: center top;
-    padding: 5% 5% 5% 5%;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: flex;
-    justify-content: space-around;
+  background-image: url(Koh\ Phi\ Phi\ Boot-min_Th_Icon.jpg);
+  min-height: 55vh;
+  min-width: 80vh;
+  background-size: cover;
+  background-position: center top;
+  padding: 5% 5% 5% 5%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
 }
 
 h1 {
-    font-family: 'permanent marker';
-    color: #ffcc00;
-    text-align: center;
-    font-size: 65px;
-    font-weight: lighter;
-    margin: 5px;
+  font-family: 'permanent marker';
+  color: #ffcc00;
+  text-align: center;
+  font-size: 65px;
+  font-weight: lighter;
+  margin: 5px;
 }
 
 h2 {
-    font-family: 'permanent marker';
-    color: #727272;
-    text-align: center;
-    font-size: 35px;
-    font-weight: lighter;
-    margin: 5px;
+  font-family: 'permanent marker';
+  color: #727272;
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 5px;
 }
 
 .einleitung {
-    display: flex;
-    justify-content: center;
-    margin: 1px, 3px;
-    padding: 3px, 3px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 1px, 3px;
+  padding: 3px, 3px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
-
 
 /*Navigation*/
 
 .nav {
-    min-height: 80px;
-    display: flex;
-    justify-content: flex;
-    align-items: center;
+  min-height: 80px;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
 }
 
 .nav-logo {
-    background-image: url(thailanderleben.com);
-    margin: 20px;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-style: italic;
+  background-image: url(thailanderleben.com);
+  margin: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 nav ul li {
-    height: 100%;
-    padding: 30px;
-    list-style-type: none;
-    font-family: poppins;
-    font-weight: bold;
-    background-color: #727272;
+  height: 100%;
+  padding: 30px;
+  list-style-type: none;
+  font-family: poppins;
+  font-weight: bold;
+  background-color: #727272;
 }
 
 nav ul li a:hover {
-    color: white;
+  color: white;
 }
 
 nav ul li a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-size: 24px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .toggle-button {
-    position: relative;
-    top: 50px;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 23px;
+  position: relative;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 23px;
 }
 
 .toggle-button .bar {
-    height: 4px;
-    width: 100%;
-    background-color: #ffcc00;
-    border-radius: 100px;
+  height: 4px;
+  width: 100%;
+  background-color: #ffcc00;
+  border-radius: 100px;
 }
 
 .thailiebe {
+  display: flex;
+  justify-content: center;
+  padding: 50px 5px;
+  font-family: poppins;
+}
+
+@media (min-width: 576px) {
+  .amexbanner {
     display: flex;
-    justify-content: center;
-    padding: 50px 5px;
-    font-family: poppins;
+    justify-content: space-around;
+  }
+  table {
+    width: 45%;
+    margin: 0;
+  }
+  img {
+    float: right;
+    padding: 2%;
+  }
 }
-
-@media (max-width: 2180px) {
-    .start {
-        width: 100%;
-        flex-direction: column;
-    }
-    .einleitung {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-@media (max-width: 400px) {
-    .start {
-        width: 100%;
-    }
+@media (min-width: 1200px) {
+  .amexbanner {
+    background: white;
+    width: 50%;
+    margin: 0px auto;
+    padding: 1.5% 1%;
+    box-shadow: 2px 2px 5px #666666;
+  }
+  body {
+    background: #fc9709 url(Bilder/hintergrund.jpg) fixed;
+    margin: 0;
+  }
+  li {
+    background: #eeeeee url(bilder/pokeball.png);
+    background-size: 3%;
+    background-repeat: no-repeat;
+    background-position: 1.5% center;
+    padding-left: 6%;
+  }
 }
