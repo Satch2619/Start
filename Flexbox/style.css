@@ -1,0 +1,23 @@
+.container {
+    border: 3px solid #333333;
+    height: 600px;
+    display: flex;
+}
+
+.item {
+    padding: 10px 20px;
+    color: black;
+    background-color: aqua;
+}
+
+.item-1 {
+    flex: 1;
+}
+
+.item-2 {
+    flex: 1;
+}
+
+.item-3 {
+    flex: 1;
+}
