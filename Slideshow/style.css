@@ -70,3 +70,27 @@ body {
 .pfeil-rechts {
   right: 0;
 }
+
+.indikatorenliste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.indikator {
+  padding: 0 10px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.aktiv {
+  opacity: 1;
+}
