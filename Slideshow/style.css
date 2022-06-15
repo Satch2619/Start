@@ -7,7 +7,6 @@ body {
 }
 
 .slideshow {
-  background-color: black;
   width: 50vw;
   height: 50vh;
   box-shadow: 0px 0px 10px gray;
@@ -19,8 +18,29 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: green;
+  overflow: hidden;
 }
 .slide-bild {
   width: 100%;
+}
+.slide-textbereich {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 15% 0 15%;
+}
+.slide-ueberschrift {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.slide-beschreibung {
+  font-size: 1.4em;
+  margin: 0;
 }
