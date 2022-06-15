@@ -44,3 +44,29 @@ body {
   font-size: 1.4em;
   margin: 0;
 }
+
+.pfeil {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+  cursor: pointer;
+}
+
+.pfeil:hover {
+  color: white;
+}
+
+.pfeil-links {
+  left: 0;
+}
+
+.pfeil-rechts {
+  right: 0;
+}
