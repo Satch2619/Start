@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow {
+  background-color: black;
+  width: 50vw;
+  height: 50vw;
+}
