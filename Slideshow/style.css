@@ -1,10 +1,26 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .slideshow {
   background-color: black;
   width: 50vw;
-  height: 50vw;
+  height: 50vh;
+  box-shadow: 0px 0px 10px gray;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+.slide-bild {
+  width: 100%;
 }
