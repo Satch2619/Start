@@ -5,6 +5,7 @@ const slides = document.getElementsByClassName('slide');
 slides[0].classList.add('aktiv');
 
 var aktuellerIndex = 0;
+var letzteAktualisierung = new Date();
 
 function umschalten(anzahl) {
   var neuerIndex = aktuellerIndex + anzahl;
@@ -27,4 +28,14 @@ function springeZuEintrag(neuerIndex) {
   slides[neuerIndex].classList.add('aktiv');
 
   aktuellerIndex = neuerIndex;
+  letzteAktualisierung = new Date();
 }
+
+function automatischWeiterschalten() {
+  const vergangeneZeit = new Date() - letzteAktualisierung;
+
+  if (vergangeneZeit >= 3000) {
+    umschalten(1);
+  }
+}
+setInterval(automatischWeiterschalten, 500);
