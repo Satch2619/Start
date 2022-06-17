@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Trainer Max Mustermann</title>
-    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="dialoge.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="hero">
-            <h1>
-                Personal Trainer <br /> Max Mustermann
-            </h1>
-            <p class="einleitung">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum esse sunt dolorum necessitatibus odit, eaque quaerat magnam perferendis tempore non cumque facilis minima vel vero laboriosam soluta id fuga facere mollitia architecto, molestiae
-                repudiandae. Quo voluptatem iste obcaecati eos!
-            </p>
-            <a href="#" class="button einleitung-button hover-button">Jetzt Registrieren!</a
+      <section class="hero">
+        <h1>
+          Personal Trainer <br />
+          Max Mustermann
+        </h1>
+        <p class="einleitung">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          nostrum esse sunt dolorum necessitatibus odit, eaque quaerat magnam
+          perferendis tempore non cumque facilis minima vel vero laboriosam
+          soluta id fuga facere mollitia architecto, molestiae repudiandae. Quo
+          voluptatem iste obcaecati eos!
+        </p>
+        <a href="#" class="button einleitung-button hover-button"
+          >Jetzt Loslegen!</a
         >
       </section>
       <section class="angebotsbereich">
@@ -68,43 +76,45 @@
             </div>
           </div>
           <div class="angebotstabelle">
-            <div class="angebotszeile"></div>
-            <div class="angebotsspalte angebotsname">Einzelastunde</div>
-            <div class="angebotsspalte angebotspreis">ab 50 €</div>
-            <div class="angebotsspalte angebotsbuttonspalte">
-              <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
-            </div>
-            </div>
-            <div class="angebotszeile"></div>
-            <div class="angebotsspalte angebotsname">4 Einzelastunden</div>
-            <div class="angebotsspalte angebotspreis">ab 150 €</div>
-            <div class="angebotsspalte angebotsbuttonspalte">
+            <div class="angebotszeile">
+              <div class="angebotsspalte angebotsname">Einzelastunde</div>
+              <div class="angebotsspalte angebotspreis">ab 50 €</div>
+              <div class="angebotsspalte angebotsbuttonspalte">
                 <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
+              </div>
             </div>
+            <div class="angebotszeile">
+              <div class="angebotsspalte angebotsname">4 Einzelastunden</div>
+              <div class="angebotsspalte angebotspreis">ab 150 €</div>
+              <div class="angebotsspalte angebotsbuttonspalte">
+                <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
+              </div>
             </div>
-            <div class="angebotszeile"></div>
-            <div class="angebotsspalte angeobtsname">Gruppenkurs</div>
-            <div class="angebotsspalte angeobtspreis">
+            <div class="angebotszeile">
+              <div class="angebotsspalte angeobtsname">Gruppenkurs</div>
+              <div class="angebotsspalte angeobtspreis">
                 ab 5 € pro Person pro Stunde
-            </div>
-            <div class="angebotsspalte angebotsbuttonspalte">
+              </div>
+              <div class="angebotsspalte angebotsbuttonspalte">
                 <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
+              </div>
             </div>
-            </div>
-            <div class="angebotszeile"></div>
+          </div>
+          <div class="angebotszeile">
             <div class="angebotsspalte angebotsname">Mitgliedschaft</div>
             <div class="angebotsspalte angbotspreis">50 €pro Monat</div>
             <div class="angebotsspalte angebotsbuttonspalte">
-                <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
+              <a href="#" class="button angebotsbutton">Jetzt Buchen</a>
             </div>
-            </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <i class="fa-solid fa-whistle icon"></i>
-        <h2>Max Mustermann</h2>
-        <a href="#" class="button footer-button hover-button">Buche dein Termin</a
+      <i class="fa-solid fa-whistle icon"></i>
+      <h2>Max Mustermann</h2>
+      <a href="#" class="button footer-button hover-button"
+        >Buche dein Termin</a
       >
       <p class="footer-zeile">Muster Straße 1a, 12345 Musterhausen</p>
       <p class="footer-zeile">01234-5678910</p>
@@ -114,12 +124,32 @@
           <i class="fa-brands fa-facebook icon"></i
         ></a>
         <a href="#" class="social-link">
-            <i class="fa-brands fa-instagram icon"></i
+          <i class="fa-brands fa-instagram icon"></i
         ></a>
         <a href="#" class="social-link">
           <i class="fa-brands fa-whatsapp icon"></i
         ></a>
       </div>
     </footer>
+    <div id="body-overlay"></div>
+    <div class="dialog" id="loslegen-dialog">
+      <a href="#" role="button" class="dialog-schliessen-button">
+        <i class="fas fa-times"></i>
+      </a>
+      <h3>Jetzt Registrieren!</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est modi vel
+        quas quibusdam aspernatur nemo
+      </p>
+      <form action="">
+        <input type="text" placeholder="Vorname" class="eingabefeld" />
+        <input type="text" placeholder="Nachname" class="eingabefeld" />
+        <input type="email" placeholder="Email-Adresse" class="eingabefeld" />
+        <input type="password" placeholder="Passwort" class="eingabefeld" />
+        <input type="submit" placeholder="Loslegen" class="eingabefeld" />
+      </form>
+    </div>
+
+    <script src="dialoge.js"></script>
   </body>
 </html>
