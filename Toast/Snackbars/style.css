@@ -1,0 +1,11 @@
+.toast-behaelter {
+  position: fixed;
+  bottom: 0.7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Optionale Stilinformationen für das Tutorial*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
