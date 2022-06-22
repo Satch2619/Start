@@ -5,6 +5,18 @@
   transform: translateX(-50%);
 }
 
+.toast {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.toast-block {
+  display: block;
+}
+
 /*Optionale Stilinformationen für das Tutorial*/
 * {
   font-family: Arial, Helvetica, sans-serif;
