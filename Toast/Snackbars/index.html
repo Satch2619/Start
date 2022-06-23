@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wie man Toast erstellt</title>
+    <title>Wie man Toasts erstellt</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="toast.js" defer></script>
+    <script src="toasts.js" defer></script>
   </head>
   <body>
-    <button type="button">Toasts anzeigen</button>
-
+    <button type="button" onclick="alleToastsEinblenden()">
+      Toasts anzeigen!
+    </button>
     <div class="toast-behaelter">
-      <div class="toast">Das ist eine unglaublich wichtige Nachricht!</div>
+      <div class="toast" data-anzeigedauer="2000">
+        Das ist unglaublich wichtige Nachricht Nr. 1!
+      </div>
+      <div class="toast" data-anzeigedauer="4000">
+        Das ist unglaublich wichtige Nachricht Nr. 2!
+      </div>
+      <div class="toast" data-anzeigedauer="6000">
+        Das ist unglaublich wichtige Nachricht Nr. 3!
+      </div>
     </div>
   </body>
 </html>
