@@ -78,6 +78,7 @@ nav ul {
 }
 
 nav ul li {
+  width: 80%;
   height: 100%;
   padding: 30px;
   list-style-type: none;
