@@ -1,0 +1,24 @@
+h1 {
+  color: navy;
+  border: 5px solid currentColor;
+}
+
+h2 {
+  color: rgb(255, 0, 255);
+}
+
+h3 {
+  color: rgba(255, 0, 255, 0.25);
+}
+
+h4 {
+  color: #00ff00;
+}
+
+h5 {
+  color: hsl(180, 75%, 50%);
+}
+
+h6 {
+  color: hsla(180, 75%, 50%, 25%);
+}
