@@ -1,0 +1,12 @@
+#verlauf {
+  background-color: red;
+  width: 800px;
+  height: 800px;
+  background-image: linear-gradient(
+    red 0%,
+    white 20%,
+    blue 50%,
+    white 70%,
+    red 100%
+  );
+}
