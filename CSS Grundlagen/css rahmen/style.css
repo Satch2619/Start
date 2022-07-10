@@ -2,24 +2,6 @@ h1,
 p,
 ul,
 span {
-  border-style: dotted;
-}
-
-h1 {
-  border-width: thick;
-}
-
-p {
-  border-width: medium;
-  border-color: blue;
-}
-
-ul {
-  border-width: thin;
-  border-color: green;
-}
-
-span {
-  border-width: 3px;
-  border-color: red;
+  border: 15px solid blue;
+  border-image: url("kuchen.jpg") 50 15 round;
 }
