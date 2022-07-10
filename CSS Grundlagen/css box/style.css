@@ -1,0 +1,18 @@
+* {
+  border: 2px solid black;
+}
+
+h1 {
+  width: 75%;
+  height: 150px;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+h2 {
+  width: 50%;
+  height: 50px;
+}
