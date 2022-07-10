@@ -5,11 +5,9 @@
 h1 {
   width: 75%;
   height: 150px;
-  padding-top: 25px;
-  padding-right: 15px;
-  padding-bottom: 50px;
-  padding-left: 30px;
   box-sizing: border-box;
+  padding: 25px 55px 50px 20px;
+  margin: 5px 10px 50px 10px;
 }
 
 h2 {
