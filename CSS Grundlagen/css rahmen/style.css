@@ -1,5 +1,22 @@
 h1,
 p,
-ul {
+ul,
+span {
   border-style: solid;
+}
+
+h1 {
+  border-width: thick;
+}
+
+p {
+  border-width: medium;
+}
+
+ul {
+  border-width: thin;
+}
+
+span {
+  border-width: 3px;
 }
