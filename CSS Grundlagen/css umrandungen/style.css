@@ -3,10 +3,12 @@ p {
   border: 2px solid red;
   outline-style: solid;
   outline-width: 30px;
+  outline-offset: 10px;
   margin: 30px;
 }
 h1 {
   outline-color: blue;
+  margin-bottom: 60px;
 }
 
 p {
