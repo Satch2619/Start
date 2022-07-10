@@ -2,7 +2,7 @@ h1,
 p,
 ul,
 span {
-  border-style: solid;
+  border-style: dotted;
 }
 
 h1 {
@@ -11,12 +11,15 @@ h1 {
 
 p {
   border-width: medium;
+  border-color: blue;
 }
 
 ul {
   border-width: thin;
+  border-color: green;
 }
 
 span {
   border-width: 3px;
+  border-color: red;
 }
