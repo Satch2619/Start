@@ -3,12 +3,14 @@
   height: 200px;
   border: 1px solid black;
   margin: auto;
-  text-align: justify;
+  text-align: left;
+  overflow-y: scroll;
 }
 
 h1 {
   color: blue;
   text-align: center;
+  word-spacing: 10px;
 }
 
 h2 {
@@ -19,4 +21,6 @@ h2 {
 p {
   text-indent: 25px;
   letter-spacing: 10px;
+  line-height: 1.8;
+  direction: ltr;
 }
