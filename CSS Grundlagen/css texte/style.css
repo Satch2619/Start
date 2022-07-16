@@ -3,4 +3,20 @@
   height: 200px;
   border: 1px solid black;
   margin: auto;
+  text-align: justify;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: wavy underline line-through overline green;
+  color: blue;
+}
+
+p {
+  text-indent: 25px;
+  letter-spacing: 10px;
 }
