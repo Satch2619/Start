@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 26px;
+  font-size: 14px;
 }
 
 body {
@@ -32,7 +32,7 @@ h1 {
   font-family: "permanent marker";
   color: #ffcc00;
   text-align: center;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: lighter;
   margin: 5px;
 }
@@ -74,8 +74,12 @@ h3 {
 
 /*Navigation*/
 
+.list_container {
+  background-color: #727272;
+}
+
 .nav {
-  min-height: 80px;
+  min-height: 10px;
   display: flex;
   justify-content: flex;
   align-items: center;
@@ -96,8 +100,8 @@ nav ul {
 
 nav ul li {
   width: 80%;
-  height: 100%;
-  padding: 30px;
+  height: 80%;
+  padding: 10px;
   list-style-type: none;
   font-family: "poppins";
   font-weight: bold;
@@ -111,7 +115,7 @@ nav ul li a:hover {
 nav ul li a {
   color: #ffcc00;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .toggle-button {
@@ -145,11 +149,33 @@ nav ul li a {
 .socialMedia {
   color: black;
 }
+
+.wisebanner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 10px;
+}
+
 .amexbanner {
   display: flex;
   justify-content: center;
-  margin: 1px, 3px;
-  padding: 3px, 3px;
+  width: 100%;
+  padding: 10px 10px;
+}
 
-  text-align: center;
+.iframe-behaelter {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-behaelter iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.iframe-behaelter-behaelter {
+  margin: 2.5% 20%;
 }
