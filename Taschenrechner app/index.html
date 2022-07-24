@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taschenrechner</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <script>
       function appendOperation(operation) {
         document.getElementById("resultArea").innerHTML += operation;
@@ -23,6 +24,10 @@
           container.innerHTML = container.innerHTML.slice(0, -1);
         }
       }
+      function deleteAll() {
+        let container = document.getElementById("resultArea");
+        container.innerHTML = "";
+      }
     </script>
   </head>
   <body>
@@ -32,7 +37,7 @@
         <td onclick="deleteLast()">C</td>
         <td onclick="appendOperation('()')">()</td>
         <td onclick="appendOperation(' % ')">%</td>
-        <td onclick="appendOperation()">CE</td>
+        <td onclick="deleteAll()">CE</td>
       </tr>
       <tr>
         <td onclick="appendOperation(7)">7</td>
