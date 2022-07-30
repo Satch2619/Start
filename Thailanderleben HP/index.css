@@ -87,7 +87,6 @@ h3 {
 
 .nav-logo {
   background-image: url(thailanderleben.com);
-  margin: 10px;
   font-size: 10px;
   font-family: sans-serif;
   font-style: italic;
@@ -196,10 +195,8 @@ nav ul li a {
   padding-top: 10px;
   color: black;
 }
-.p {
-  color: black;
-}
+
 .icon {
   color: white;
-  font-size: 4vw, 1.6em;
+  font-size: 4vw 1.6em;
 }

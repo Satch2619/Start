@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+body {
+  background-color: rgb(242, 240, 238);
+}
+
+.start {
+  background-image: linear-gradient(transparent 80%, rgb(242, 240, 238)),
+    url(Koh\ Phi\ Phi\ Boot-min_Th_Icon.jpg);
+  min-height: 48vh;
+  min-width: 80vh;
+  background-size: cover;
+  background-position: center top;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: permanent marker;
+  color: #ffcc00;
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 5px;
+}
+
+.folgemir {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
