@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 body {
@@ -14,7 +14,7 @@ html {
 }
 
 .start {
-  background-image: linear-gradient(transparent 60%, white),
+  background-image: linear-gradient(transparent 80%, rgb(242, 240, 238)),
     url(Koh\ Phi\ Phi\ Boot-min_Th_Icon.jpg);
   min-height: 48vh;
   min-width: 80vh;
@@ -147,9 +147,17 @@ nav ul li a {
 }
 
 .socialMedia {
+  display: flex;
+  justify-content: center;
   color: black;
+  background-color: #727272;
+  margin: 1%;
+  padding: 5px;
 }
 
+.nav-link {
+  color: black;
+}
 .wisebanner {
   display: flex;
   justify-content: center;
@@ -178,4 +186,20 @@ nav ul li a {
 }
 .iframe-behaelter-behaelter {
   margin: 2.5% 20%;
+}
+
+.backlinks {
+  margin: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  color: black;
+}
+.p {
+  color: black;
+}
+.icon {
+  color: white;
+  font-size: 4vw, 1.6em;
 }
