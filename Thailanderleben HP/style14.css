@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+body {
+  background-color: rgb(242, 240, 238);
+}
+.start {
+  background-image: linear-gradient(transparent 80%, rgb(242, 240, 238)),
+    url(Koh\ Phi\ Phi\ Boot-min_Th_Icon.jpg);
+  min-height: 48vh;
+  min-width: 80vh;
+  background-size: cover;
+  background-position: center top;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: permanent marker;
+  color: #ffcc00;
+  text-align: center;
+  font-size: 55px;
+  font-weight: lighter;
+  margin: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: #727272;
+  margin: 1%;
+  padding: 5px;
+}
