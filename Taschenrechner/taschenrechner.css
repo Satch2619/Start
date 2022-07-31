@@ -3,6 +3,59 @@
 }
 
 body {
+  margin: 0;
   display: grid;
   place-items: center;
+  min-height: 100vh;
+  background-color: #858585;
+  color: azure;
+  cursor: pointer;
+  /*background-image: url(Satch\ Production\ Logo\ transparent.png);*/
+}
+#taschenrechner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+#taschenrechner {
+  color: inherit;
+}
+
+#anzeige {
+  grid-column: span 4;
+  border: 2px solid #707070;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-align: end;
+}
+
+#eingabefeld {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: inherit;
+}
+
+#eingabefeld:focus-visible {
+  outline: none;
+}
+
+#anzeige:focus-within {
+  outline: 1px solid #606060;
+}
+
+.taste {
+  background-color: #606060;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 5em;
+}
+
+.taste:hover {
+  color: #ffbd59;
+  cursor: pointer;
 }
