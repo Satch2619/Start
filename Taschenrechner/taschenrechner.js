@@ -22,10 +22,18 @@ for (const taste of tasten) {
     // 2. Herausfinden, welches zteichen auf der angeklickten Taste abgebildet ist
     const angeklicktesZeichen = ereignis.target.textContent;
 
-    // 3. Das Zeichen der angeklickten Taste an die Eingabe anhängen
-    eingabefeld.value += angeklicktesZeichen;
+    // Je nach angeklickter Taste unterschiedliche Dinge tun
+    switch (angeklicktesZeichen) {
+      case "=":
+      // Das Ergebnis der eingegeben Rechnung ermitteln
 
-    // 4. Wert der aktuelleEingabe-Variablen aktualsieren
-    aktuelleEingabe = eingabefeld.value;
+      default:
+        // 3. Das Zeichen der angeklickten Taste an die Eingabe anhängen
+        eingabefeld.value += angeklicktesZeichen;
+
+        // 4. Wert der aktuelleEingabe-Variablen aktualsieren
+        aktuelleEingabe = eingabefeld.value;
+        breakk;
+    }
   });
 }
