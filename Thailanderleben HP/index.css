@@ -33,7 +33,7 @@ h1 {
   font-family: "permanent marker";
   color: #ffcc00;
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: lighter;
   margin: 5px;
 }
@@ -42,7 +42,7 @@ h2 {
   font-family: "permanent marker";
   color: #727272;
   text-align: center;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: lighter;
   margin: 0;
 }
@@ -51,7 +51,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 1px, 3px;
-  padding: 3px, 3px;
+  padding: 15px, 100px;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -59,7 +59,7 @@ h3 {
   font-family: "permanent marker";
   color: #727272;
   text-align: center;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: lighter;
   margin: 0;
 }
