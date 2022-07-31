@@ -33,7 +33,7 @@ for (const taste of tasten) {
 
         // 4. Wert der aktuelleEingabe-Variablen aktualsieren
         aktuelleEingabe = eingabefeld.value;
-        breakk;
+        break;
     }
   });
 }
