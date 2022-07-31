@@ -84,3 +84,16 @@ h2 {
   font-weight: bold;
   text-decoration-color: blue;
 }
+
+#adgshp-1109735696 {
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  left: 22%;
+}
+
+.AgdBadge {
+  position: relative;
+  left: 45%;
+  margin: 10px;
+}
