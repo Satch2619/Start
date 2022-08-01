@@ -10,7 +10,7 @@ body {
   background-color: #858585;
   color: #ffbd59;
   cursor: pointer;
-  /*background-image: url(Satch\ Production\ Logo\ transparent.png);*/
+  background-image: url(Satch\ Production\ Logo\ transparent.png);
 }
 #taschenrechner {
   display: grid;
