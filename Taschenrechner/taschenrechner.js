@@ -5,13 +5,18 @@ const RECHNEN_BUTTON_ID = "rechnen-button";
 const TASTE_KLASSE = "taste";
 const FEHLER_KLASSE = "fehler";
 
+const LEERZEICHEN_ERFORDERLICH_REGEX = /(\d|\))\s*(\+|\*|\/)\s*/g;
+
 const anzeige = document.getElementById(ANZEIGE_ID);
 const eingabefeld = document.getElementById(EINGABEFELD_ID);
 const rechenwegAnzeige = document.getElementById(RECHENWEG_ANZEIGE_ID);
 const rechnenButton = document.getElementById(RECHNEN_BUTTON_ID);
 const tasten = document.getElementById(TASTE_KLASSE);
 
-const formatierer = new Intl.NumberFormat(undefined, {maximumFractionDigits: 15, useGrouping: false});
+const formatierer = new Intl.NumberFormat(undefined, {
+  maximumFractionDigits: 15,
+  useGrouping: false,
+});
 
 let aktuelleEingabe = "";
 
@@ -27,10 +32,26 @@ for (const taste of tasten) {
 
     // Je nach angeklickter Taste unterschiedliche Dinge tun
     switch (angeklicktesZeichen) {
+      case "ENTF":
+        // Da letze Zeichen im  Eingabefeld entfernen
+        eingabefeld.value = eingabefeld.value.slice(0, -1);
+
+        // aktuelleEingabe mit dem Inhalt des Eingabefeldes synchroniseren
+        aktuelleEingabe = eingabefeld.value;
+        break;
+
+      case "AC":
+        // Das gesamte Eingabefeld leeren
+        eingabefeld.value = "";
+        aktuelleEingabe = "";
+        break;
+
       case "=":
-        try{
+        try {
           // Das Ergebnis der eingegeben Rechnung ermitteln
-          const ergebnis = new function("return " + eingabefeld.value.replaceAll(",", "."))();
+          const ergebnis = new Function(
+            "return " + eingabefeld.value.replaceAll(",", ".")
+          )();
 
           // Das Ergebnis in das Eingabefeld schreiben
           eingabefeld.value = formatierer.format(ergebnis);
@@ -48,14 +69,17 @@ for (const taste of tasten) {
           rechenwegAnzeige.textContent = "Ungültige Eingabe!";
           rechenwegAnzeige.classList.add(FEHLER_KLASSE);
         }
-        
-          break;
+
+        break;
 
       default:
         // Das Zeichen der angeklickten Taste an die Eingabe anhängen
         eingabefeld.value += angeklicktesZeichen;
 
-        // 4. Wert der aktuelleEingabe-Variablen aktualsieren
+        // Die Operatotren mit Leerzeichen umschließen
+        eingabefeld.value.replaceAll();
+
+        // Wert der aktuelleEingabe-Variablen aktualsieren
         aktuelleEingabe = eingabefeld.value;
         break;
     }
