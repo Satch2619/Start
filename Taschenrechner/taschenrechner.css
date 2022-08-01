@@ -8,7 +8,7 @@ body {
   place-items: center;
   min-height: 100vh;
   background-color: #858585;
-  color: azure;
+  color: #e8eaed;
   cursor: pointer;
   /*background-image: url(Satch\ Production\ Logo\ transparent.png);*/
 }
@@ -18,7 +18,7 @@ body {
   gap: 0.5rem;
 }
 
-#taschenrechner {
+#taschenrechner * {
   color: inherit;
 }
 
@@ -68,4 +68,7 @@ body {
 #rechenweg-anzeige {
   line-height: 1.2;
   height: 1.2em;
+}
+#rechenweg-anzeige.fehler {
+  color: red;
 }

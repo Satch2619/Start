@@ -3,12 +3,15 @@ const EINGABEFELD_ID = "eingabefeld";
 const RECHENWEG_ANZEIGE_ID = "rechenweg-anzeige";
 const RECHNEN_BUTTON_ID = "rechnen-button";
 const TASTE_KLASSE = "taste";
+const FEHLER_KLASSE = "fehler";
 
 const anzeige = document.getElementById(ANZEIGE_ID);
 const eingabefeld = document.getElementById(EINGABEFELD_ID);
 const rechenwegAnzeige = document.getElementById(RECHENWEG_ANZEIGE_ID);
 const rechnenButton = document.getElementById(RECHNEN_BUTTON_ID);
 const tasten = document.getElementById(TASTE_KLASSE);
+
+const formatierer = new Intl.NumberFormat(undefined, {maximumFractionDigits: 15, useGrouping: false});
 
 let aktuelleEingabe = "";
 
@@ -25,18 +28,28 @@ for (const taste of tasten) {
     // Je nach angeklickter Taste unterschiedliche Dinge tun
     switch (angeklicktesZeichen) {
       case "=":
-        // Das Ergebnis der eingegeben Rechnung ermitteln
-        const ergebnis = new function("return " + eingabefeld.value)();
+        try{
+          // Das Ergebnis der eingegeben Rechnung ermitteln
+          const ergebnis = new function("return " + eingabefeld.value.replaceAll(",", "."))();
 
-        // Das Ergebnis in das Eingabefeld schreiben
-        eingabefeld.value = ergebnis;
+          // Das Ergebnis in das Eingabefeld schreiben
+          eingabefeld.value = formatierer.format(ergebnis);
 
-        // Die rechnung, die zum Ergebnis geführt hat, in das Rechenweg-Feld schreiben
-        rechenwegAnzeige.textContent = aktuelleEingabe;
+          // Die rechnung, die zum Ergebnis geführt hat, in das Rechenweg-Feld schreiben
+          rechenwegAnzeige.textContent = aktuelleEingabe;
 
-        // aktuelleEingabe mit dem Inhalt des Eingabefeldes synchronisieren
-        aktuelleEingabe = eingabefeld.value;
-        break;
+          // aktuelleEingabe mit dem Inhalt des Eingabefeldes synchronisieren
+          aktuelleEingabe = eingabefeld.value;
+
+          // Fehlerklasse von der Rechnenweg-Anzeige nehmen
+          rechenwegAnzeige.classList.remove(FEHLER_KLASSE);
+        } catch {
+          // Fehlermeldung in Rechenweg-Anzeige schreiben
+          rechenwegAnzeige.textContent = "Ungültige Eingabe!";
+          rechenwegAnzeige.classList.add(FEHLER_KLASSE);
+        }
+        
+          break;
 
       default:
         // Das Zeichen der angeklickten Taste an die Eingabe anhängen
