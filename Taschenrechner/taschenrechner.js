@@ -1,6 +1,6 @@
 const ANZEIGE_ID = "anzeige";
 const EINGABEFELD_ID = "eingabefeld";
-const RECHENWEG_ANZEIGE_ID = "rechenweg_anzeige";
+const RECHENWEG_ANZEIGE_ID = "rechenweg-anzeige";
 const RECHNEN_BUTTON_ID = "rechnen-button";
 const TASTE_KLASSE = "taste";
 
@@ -25,10 +25,21 @@ for (const taste of tasten) {
     // Je nach angeklickter Taste unterschiedliche Dinge tun
     switch (angeklicktesZeichen) {
       case "=":
-      // Das Ergebnis der eingegeben Rechnung ermitteln
+        // Das Ergebnis der eingegeben Rechnung ermitteln
+        const ergebnis = new function("return " + eingabefeld.value)();
+
+        // Das Ergebnis in das Eingabefeld schreiben
+        eingabefeld.value = ergebnis;
+
+        // Die rechnung, die zum Ergebnis geführt hat, in das Rechenweg-Feld schreiben
+        rechenwegAnzeige.textContent = aktuelleEingabe;
+
+        // aktuelleEingabe mit dem Inhalt des Eingabefeldes synchronisieren
+        aktuelleEingabe = eingabefeld.value;
+        break;
 
       default:
-        // 3. Das Zeichen der angeklickten Taste an die Eingabe anhängen
+        // Das Zeichen der angeklickten Taste an die Eingabe anhängen
         eingabefeld.value += angeklicktesZeichen;
 
         // 4. Wert der aktuelleEingabe-Variablen aktualsieren
