@@ -8,7 +8,7 @@ body {
   place-items: center;
   min-height: 100vh;
   background-color: #858585;
-  color: #e8eaed;
+  color: #ffbd59;
   cursor: pointer;
   /*background-image: url(Satch\ Production\ Logo\ transparent.png);*/
 }
@@ -16,10 +16,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
-}
-
-#taschenrechner * {
-  color: inherit;
 }
 
 #anzeige {
@@ -67,7 +63,9 @@ body {
 
 #rechenweg-anzeige {
   line-height: 1.2;
-  height: 1.2em;
+  height: 1.4em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 #rechenweg-anzeige.fehler {
   color: red;
