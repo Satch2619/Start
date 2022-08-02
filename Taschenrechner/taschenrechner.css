@@ -8,12 +8,12 @@ body {
   place-items: center;
   min-height: 100vh;
   background-color: #858585;
-  color: #ffbd59;
+  color: white;
   cursor: pointer;
   background-image: url(Satch\ Production\ Logo\ Luminar\ Transparent.png);
   background-repeat: no-repeat;
   background-position: center 50%;
-  background-size: 50% auto;
+  background-size: 50%;
 }
 #taschenrechner {
   display: grid;
@@ -46,7 +46,7 @@ body {
 }
 
 #anzeige:focus-within {
-  outline: 1px solid #ffbd59;
+  outline: 2.5px solid #ffbd59;
 }
 
 .taste {
