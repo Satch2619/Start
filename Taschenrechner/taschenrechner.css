@@ -10,7 +10,10 @@ body {
   background-color: #858585;
   color: #ffbd59;
   cursor: pointer;
-  background-image: url(Satch\ Production\ Logo\ transparent.png);
+  background-image: url(Satch\ Production\ Logo\ Luminar\ Transparent.png);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: 50% auto;
 }
 #taschenrechner {
   display: grid;
@@ -35,6 +38,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   text-align: inherit;
+  color: black;
 }
 
 #eingabefeld:focus-visible {
