@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 table.content {
@@ -17,4 +17,5 @@ table.content thead tr {
   background-color: blue;
   color: white;
   font-weight: bold;
+  text-align: left;
 }
