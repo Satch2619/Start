@@ -28,3 +28,12 @@ table.content td {
 table.content tbody tr {
   border-bottom: 1px solid black;
 }
+
+table.content tbody tr:last-of-type {
+  border-bottom: 2px solid blue;
+}
+
+table.content tbody tr.active {
+  font-weight: bold;
+  color: blue;
+}
