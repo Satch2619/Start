@@ -1,9 +1,13 @@
-let highscore = 80;
+let Max = {
+  groeße: 180,
+  alter: 25,
+  geburtstag: function () {
+    this.alter += 1;
+  },
+};
 
-if (highscore > 99) {
-  console.log("Sascha ist der Beste");
-} else if (highscore >= 80) {
-  console.log("Das geht nooch besser!");
-} else {
-  console.log("Ach du Scheise!");
-}
+Max.geburtstag();
+Max.geburtstag();
+Max.geburtstag();
+
+console.log(Max.alter);
