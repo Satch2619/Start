@@ -1,0 +1,33 @@
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkgray;
+}
+
+.cube {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.cube-1 {
+  background-color: red;
+}
+
+.cube-2 {
+  background-color: yellow;
+}
+
+.cube-3 {
+  background-color: green;
+}
+
+.cube-4 {
+  background-color: white;
+}
