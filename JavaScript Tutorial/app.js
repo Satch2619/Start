@@ -1,13 +1,20 @@
-let Max = {
-  groeße: 180,
-  alter: 25,
-  geburtstag: function () {
-    this.alter += 1;
-  },
-};
+let obstListe = ["Banane", "Apfel", "Erdbeere"];
 
-Max.geburtstag();
-Max.geburtstag();
-Max.geburtstag();
+// hinmzufügen an das Ende des Arrays
+obstListe.push("Heidelbeere");
+console.log(obstListe);
 
-console.log(Max.alter);
+// Entfernen des letzten Elements
+obstListe.pop();
+console.log(obstListe);
+
+// Hinzufügen am Anfang des Arrays
+obstListe.unshift("Kiwi");
+console.log(obstListe);
+
+// Entfernen des ersten Elements
+obstListe.shift();
+console.log(obstListe);
+
+obstListe.splice(1, 1);
+console.log(obstListe);
