@@ -9,4 +9,6 @@ body {
 .card {
   border-radius: 10px;
   padding: 16px;
+  background-color: blue;
+  clip-path: circle(150px at 0px 0px);
 }
