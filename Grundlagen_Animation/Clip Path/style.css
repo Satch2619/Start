@@ -10,5 +10,12 @@ body {
   border-radius: 10px;
   padding: 16px;
   background-color: blue;
-  clip-path: circle(150px at 0px 0px);
+  clip-path: circle(150px at 0px);
+}
+
+.card:hover {
+  clip-path: circle(60%);
+  cursor: pointer;
+  clip-path: circle(250px at 150px 150px);
+  transition: clip-path 0.25s ease-in;
 }
