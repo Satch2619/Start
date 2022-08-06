@@ -18,6 +18,7 @@
 
 .cube-1 {
   background-color: red;
+  animation: left 1s infinite;
 }
 
 .cube-2 {
@@ -30,4 +31,31 @@
 
 .cube-4 {
   background-color: white;
+  animation: right 1s infinite;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+
+  50 % {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+
+  50 % {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
 }
