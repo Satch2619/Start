@@ -1,5 +1,6 @@
-let obstListe = ["Banane", "Apfel", "Erdbeere", "Kiwi"];
+let = clickButton = document.querySelector("#click-button");
+clickButton.addEventListener("click", eingabe);
 
-obstListe.forEach(function (value) {
-  console.log(value);
-});
+function eingabe() {
+  console.log("Hallo Button");
+}
