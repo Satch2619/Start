@@ -1,5 +1,6 @@
 // 2. innerHTML verwenden
 
+const ul = document.querySelector(".liste");
 const meinLitItem = document.querySelectorAll(".liste > li")[1];
 
-meinLitItem.innerHTML = "<span>Es gibt jetzt Kirchen</span>";
+ul.innerHTML = "<span>Es gibt jetzt Kirchen</span>";
