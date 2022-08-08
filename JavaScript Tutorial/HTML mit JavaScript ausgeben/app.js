@@ -1,6 +1,5 @@
-// 2. innerHTML verwenden
+// 3. insertAdjacentHTML verwenden
 
 const ul = document.querySelector(".liste");
-const meinLitItem = document.querySelectorAll(".liste > li")[1];
 
-ul.innerHTML = "<span>Es gibt jetzt Kirchen</span>";
+ul.insertAdjacentHTML("afterbegin", `<li>Heute ist Pizzatag</li>`);
