@@ -1,18 +1,5 @@
-// 1. HTML Objekte erstellen und hinzufügen
+// 2. innerHTML verwenden
 
-const ul = document.querySelector(".liste");
+const meinLitItem = document.querySelectorAll(".liste > li")[1];
 
-//<li></li>
-const newListItem = document.createElement("li");
-
-//<li>Der Rettich ist scharf</li>
-newListItem.textContent = "Der Rettich ist scharf";
-
-//<li class="special">Der Rettich ist scharf</li>
-newListItem.classList.add("special");
-
-newListItem.addEventListener("click", () => {
-  console.log("Hallo ich bin der Rettich");
-});
-
-ul.append(newListItem);
+meinLitItem.innerHTML = "<span>Es gibt jetzt Kirchen</span>";
