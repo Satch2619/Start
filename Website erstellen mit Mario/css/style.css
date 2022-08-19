@@ -48,6 +48,21 @@ body {
   --font-scale: 0.4vw;
 }
 
+body.invert {
+  --color-black: #dcdcdc;
+  --color-white: #191919;
+  --color-grey: #6e6e6e;
+  --color-green: #1f864a;
+  --color-red: #c63140;
+  --color-purple: #9e02e1;
+  --color-yellow: #e37e02;
+  --color-blue: #0856ef;
+
+  --font: "IBM", monospace;
+  --line: 3ch;
+  --font-scale: 0.4vw;
+}
+
 /*ANCHOR Main Style*/
 
 * {
@@ -88,13 +103,35 @@ a {
   text-decoration: none;
 }
 
+/* ANCHOR Navigation */
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 /* ANCHOR Link Color*/
-.link.blue {
+.link-blue {
   color: var(--color-blue);
+}
+
+.link-blue:hover {
+  color: var(--color-black);
+  background: var(--color-blue);
+  cursor: pointer;
 }
 
 .link-purple {
   color: var(--color-purple);
+}
+
+.link-purple:hover {
+  color: var(--color-black);
+  background: var(--color-purple);
+  cursor: pointer;
 }
 
 /* ANCHOR Text Color*/
