@@ -151,6 +151,15 @@ nav > ul {
   background: var(--color-green);
 }
 
+.link-grey {
+  color: var(--color-grey);
+}
+
+.link-grey:hover {
+  color: var(--color-black);
+  background: var(--color-grey);
+}
+
 /* ANCHOR Text Color*/
 
 .text-black {
@@ -171,4 +180,15 @@ nav > ul {
 
 #page-logo {
   font-style: italic;
+}
+
+/* ANCHOR Footer Styles*/
+
+footer > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
