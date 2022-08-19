@@ -84,7 +84,32 @@ h1 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* ANCHOR Link Color*/
+.link.blue {
+  color: var(--color-blue);
+}
+
+.link-purple {
+  color: var(--color-purple);
+}
+
 /* ANCHOR Text Color*/
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-green {
+  color: var(--color-green);
+}
 
 .text-grey {
   color: var(--color-grey);
