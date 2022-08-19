@@ -1,3 +1,4 @@
+/* ANCHOR Fonts*/
 @font-face {
   font-family: "IBM";
   src: url(../font/IBMPlexMono-Regular.ttf) format("truetype");
@@ -30,6 +31,8 @@
   font-display: swap;
 }
 
+/* ANCHOR  Custom Proberties */
+
 body {
   --color-black: #191919;
   --color-white: #e1e1e1;
@@ -45,7 +48,14 @@ body {
   --font-scale: 0.4vw;
 }
 
+/*ANCHOR Main Style*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: var(--font);
   font-weight: 400;
   font-style: normal;
@@ -53,4 +63,29 @@ body {
   line-height: var(--line);
   color: var(--color-white);
   background-color: var(--color-black);
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ANCHOR Contet Style*/
+
+h1 {
+  color: var(--color-blue);
+  font-size: calc(1.6rem + var(--font-scale));
+  font-weight: 400;
+  line-height: var(--line);
+  margin: 0;
+}
+
+/* ANCHOR Text Color*/
+
+.text-grey {
+  color: var(--color-grey);
 }
