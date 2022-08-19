@@ -114,6 +114,16 @@ nav > ul {
 }
 
 /* ANCHOR Link Color*/
+
+.link-white,
+.link-grey,
+.link-green,
+.link-red,
+.link-purple,
+.link-blue {
+  cursor: pointer;
+}
+
 .link-blue {
   color: var(--color-blue);
 }
@@ -121,7 +131,6 @@ nav > ul {
 .link-blue:hover {
   color: var(--color-black);
   background: var(--color-blue);
-  cursor: pointer;
 }
 
 .link-purple {
@@ -131,7 +140,15 @@ nav > ul {
 .link-purple:hover {
   color: var(--color-black);
   background: var(--color-purple);
-  cursor: pointer;
+}
+
+.link-green {
+  color: var(--color-green);
+}
+
+.link-green:hover {
+  color: var(--color-black);
+  background: var(--color-green);
 }
 
 /* ANCHOR Text Color*/
@@ -150,4 +167,8 @@ nav > ul {
 
 .text-grey {
   color: var(--color-grey);
+}
+
+#page-logo {
+  font-style: italic;
 }
