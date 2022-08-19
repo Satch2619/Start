@@ -31,8 +31,21 @@
 }
 
 body {
+  --color-black: #191919;
+  --color-white: #e1e1e1;
+  --color-grey: #898989;
+  --color-green: #13f270;
+  --color-red: #fc1a52;
+  --color-purple: #cb06d6;
+  --color-yellow: #c1de04;
+  --color-blue: #03bfee;
+}
+
+body {
   font-family: "IBM", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
+  color: #e1e1e1;
+  background-color: #191919;
 }
