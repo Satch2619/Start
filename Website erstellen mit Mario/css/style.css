@@ -160,6 +160,15 @@ nav > ul {
   background: var(--color-grey);
 }
 
+.link-red {
+  color: var(--color-red);
+}
+
+.link-red:hover {
+  color: var(--color-black);
+  background: var(--color-red);
+}
+
 /* ANCHOR Text Color*/
 
 .text-black {
