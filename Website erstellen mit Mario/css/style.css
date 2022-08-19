@@ -39,13 +39,18 @@ body {
   --color-purple: #cb06d6;
   --color-yellow: #c1de04;
   --color-blue: #03bfee;
+
+  --font: "IBM", monospace;
+  --line: 3ch;
+  --font-scale: 0.4vw;
 }
 
 body {
-  font-family: "IBM", monospace;
+  font-family: var(--font);
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  color: #e1e1e1;
-  background-color: #191919;
+  font-size: calc(1rem + 0.4vw);
+  line-height: var(--line);
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
