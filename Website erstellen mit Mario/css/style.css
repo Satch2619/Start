@@ -91,7 +91,8 @@ footer {
 
 /* ANCHOR Contet Style*/
 
-h1 {
+h1,
+h2 {
   color: var(--color-blue);
   font-size: calc(1.6rem + var(--font-scale));
   font-weight: 400;
