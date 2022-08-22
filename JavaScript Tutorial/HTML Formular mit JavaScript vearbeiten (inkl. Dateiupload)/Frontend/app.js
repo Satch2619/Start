@@ -1,7 +1,5 @@
-let button = document.getElementById("btnSubmit")
-button.addEventListener("click", macheWas);
+document.getElementById("myForm").addEventListener('Submit', handleForm);
 
-function macheWas(event) {
-  console.log(event);
-
+function handleForm(event) {
+  event.preventDefault();
 }
