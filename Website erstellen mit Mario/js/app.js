@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#currentYear").innerHTML = year;
 
   if("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("servceWorker.js", { scope: "/"}) 
+    navigator.serviceWorker.register("serviceWorker.js", { scope: "/"}) 
       .then(() => console.log("service worker registered")) 
       .catch((error) => console.warn(error))
     }
