@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let currenTime = new Date();
   let year = currenTime.getFullYear();
   document.querySelector("#currentYear").innerHTML = year;
+
+  if("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("servceWorker.js", { scope: "/"}) 
+      .then(() => console.log("service worker registered")) 
+      .catch((error) => console.warn(error))
+    }
 });
 
 document.querySelector("#invertButton").addEventListener("click", () => {
