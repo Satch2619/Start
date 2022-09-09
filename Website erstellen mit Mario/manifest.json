@@ -1,0 +1,9 @@
+{
+  "name": "Programmieren mit Mario",
+  "short-name": "Mit Mario",
+  "description": "Web Entwicklung einfach starten - Alles rundum Webentwicklung, Webdesign und angrenzende Themen",
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#191919",
+  "background_color": "#191919"
+}
