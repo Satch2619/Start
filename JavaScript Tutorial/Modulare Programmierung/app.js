@@ -1,4 +1,6 @@
-let = persons = [
+import { addItemToArray } from "./arrayHelper.js";
+
+let persons = [
   {
     id: 0,
     name: "Max",
@@ -16,4 +18,4 @@ let = persons = [
   },
 ]
 
-console.log(persons)
+console.log(persons);
