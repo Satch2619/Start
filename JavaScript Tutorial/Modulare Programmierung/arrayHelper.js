@@ -5,4 +5,10 @@ function addItemToArray(array, item) {
   else array.splice(index, 1, item);
 }
 
-export { addItemToArray };
+function removeItemFromArray(aeeay, item){
+  let index = array.findIndex((element) => element.id === item.id);
+
+  if(index !== -1) array.splice(index, 1);
+}
+
+export { addItemToArray, removeItemFromArray };

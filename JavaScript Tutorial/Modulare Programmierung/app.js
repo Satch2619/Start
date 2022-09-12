@@ -1,4 +1,4 @@
-import { addItemToArray } from "./arrayHelper.js";
+import { addItemToArray, removeItemFromArray } from "./arrayHelper.js";
 
 let persons = [
   {
@@ -17,5 +17,11 @@ let persons = [
     hobby: "Videospiele"
   },
 ]
+
+addItemToArray(persons, {
+  id: 3,
+  name: "Robert",
+  hobby: "Fussball",
+})
 
 console.log(persons);
