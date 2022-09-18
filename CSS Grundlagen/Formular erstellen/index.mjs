@@ -17,7 +17,7 @@ app.post('/geheime-seite.html', (req, res) => {
     if (username === 'Satch' && userpassword === 'Production') {
   return res.sendFile(path.resolve("seiten/geheime-seite.html"))
     }
-  res.sendFile(path.resolve("seiten/geheime-seite.html"))
+  res.sendFile(path.resolve("seiten/falsch.html"))
 })
 
 app.listen(port,() => {
