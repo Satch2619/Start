@@ -17,6 +17,7 @@ function getProducts(){
 }
 
 let search = "Milch";
+let isLoading = true;
 
 getProducts().then((products) => {
   return products.find((product) => product.name === search);
@@ -25,6 +26,9 @@ getProducts().then((products) => {
   console.log(product);
 }).catch((err) =>{
   console.log(err);
+})
+.finally(() => {
+  isLoading = false;
 });
 
 //function findProduct(productName, callback) {
