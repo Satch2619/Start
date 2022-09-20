@@ -1,14 +1,17 @@
-function getProducts(){
-  return [
-    {name:"Milch", inStock: 5},
-    {name:"Butter", inStock: 8},
-  ];
+function getProducts(callback){
+  setTimeout(() => {
+    callback([
+        {name:"Milch", inStock: 5},
+        {name:"Butter", inStock: 8},
+      ]);
+  }, 1000);
 }
 
-function findProduct(productName) {
-  let products = getProducts();
-  let product = products.find((product) => product.name === productName);
-  return product;
+function findProduct(productName, callback) {
+  getProducts((products) => {
+    let product = products.find((product) => product.name === productName);
+    callback(product);
+  });
 }
 
-console.log(findProduct("Butter"));
+findProduct("Butter", console.log);
