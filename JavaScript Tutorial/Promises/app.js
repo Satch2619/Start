@@ -16,6 +16,14 @@ function getProducts(){
   });
 }
 
+let search = "Milch";
+
+getProducts().then((products) => {
+  return products.find((product) => product.name === search);
+})
+.then((product) =>{
+  console.log(product);
+}).catch();
 
 //function findProduct(productName, callback) {
 //  getProducts((products) => {
