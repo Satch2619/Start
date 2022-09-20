@@ -1,4 +1,4 @@
-let success = true;
+let success = false;
 
 function getProducts(){
   return new Promise((resolve, reject) => {
@@ -23,7 +23,9 @@ getProducts().then((products) => {
 })
 .then((product) =>{
   console.log(product);
-}).catch();
+}).catch((err) =>{
+  console.log(err);
+});
 
 //function findProduct(productName, callback) {
 //  getProducts((products) => {
