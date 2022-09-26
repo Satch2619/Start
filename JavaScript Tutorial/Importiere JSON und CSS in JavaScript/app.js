@@ -1,3 +1,3 @@
 import { toConsole } from "./helperFunctions.js";
 
-toConsole("Hallo Welt")
+toConsole("Hallo Welt");
