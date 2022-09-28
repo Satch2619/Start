@@ -1,0 +1,14 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+  color: blue;
+}
+
+.card {
+  padding: 5px;
+  background-color: rgb(240, 237, 234);
+  color: rgb(62, 61, 62);
+  border-radius: 4.2px;
+  border-style: solid;
+}
