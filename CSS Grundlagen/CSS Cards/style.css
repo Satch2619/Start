@@ -38,17 +38,17 @@ h1 {
 }
 
 .fa,
+.fas,
 .fab,
-.fad,
-.fal,
-.far,
-.fas {
+.far {
+  color: blue;
+}
+
+.fa:hover,
+.fas:hover,
+.fab:hover,
+.far:hover {
   color: black;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 2;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  font-size: xx-large;
+  cursor: pointer;
 }
