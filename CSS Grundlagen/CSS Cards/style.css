@@ -1,5 +1,5 @@
 * {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
   color: blue;
@@ -25,4 +25,14 @@ h1 {
 
 .card-content {
   background-color: chartreuse;
+}
+
+.card1 {
+  margin-top: 1em;
+  border-radius: 1.5rem;
+  border-color: black;
+}
+
+.card-header1 {
+  background-color: beige;
 }
