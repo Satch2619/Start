@@ -36,3 +36,19 @@ h1 {
 .card-header1 {
   background-color: beige;
 }
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  color: black;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 2;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
