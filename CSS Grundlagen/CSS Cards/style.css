@@ -24,17 +24,37 @@ h1 {
 }
 
 .card-content {
+  padding: 10px;
   background-color: chartreuse;
 }
 
 .card1 {
   margin-top: 1em;
   border-radius: 1.5rem;
-  border-color: black;
+  border-color: transparent;
+  border-style: transparent;
+  box-shadow: 2px 2px 15px grey;
 }
 
 .card-header1 {
-  background-color: beige;
+  background-color: #737373;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  justify-content: center;
+  border-top-left-radius: 21.5px;
+  border-top-right-radius: 21.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.card-title1 {
+  padding: 10px;
+}
+
+.card-text1 {
+  padding: 10px;
 }
 
 .fa,
